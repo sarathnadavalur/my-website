@@ -13,7 +13,7 @@ const Sketch = (p5) => {
 
   p5.draw = () => {
     // Adjust scale factor based on angle
-    scaleFactor = p5.map(angle, p5.PI / 16, p5.PI / 2, 0.01, 1.5);
+    scaleFactor = p5.map(angle, p5.PI / 16, p5.PI / 2, 0.5, 1.5);
 
     // Calculate color components based on scale factor
     let colorComponent = p5.map(scaleFactor, 0.7, 1.3, 255, 0); // Transition from white (255) to cyan's green and blue components (0)

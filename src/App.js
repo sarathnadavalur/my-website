@@ -17,6 +17,7 @@ function App() {
         <Intro></Intro>
         <About></About>
         <Experience></Experience>
+        <Credits></Credits>
       </div>
     </div>
   );
