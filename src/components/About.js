@@ -19,7 +19,7 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-      I am a <a href="#about">Software Engineer</a> with nearly 6 years of experience specializing in <strong>Java-based web services</strong>. My expertise extends to developing robust frameworks and reusable libraries that streamline processes and enhance productivity across various teams and organizations. I hold a Master’s degree from <a href="https://www.concordia.ca/about.html" target="_blank" rel="noopener noreferrer">Concordia University</a>. Throughout my career, I have collaborated with multinational corporations, leveraging my skills to deliver high-quality, scalable solutions.
+      I am a <a href="#about">Full-Stack Java Developer</a> with 6+ years of experience delivering enterprise web applications and RESTful services across the complete SDLC, specializing in <strong>FinTech, DevOps, and microservices architecture</strong>. I'm currently a Consultant / Senior Software Engineer with Accenture, working on the TD Bank account. I hold a Master's degree from <a href="https://www.concordia.ca/about.html" target="_blank" rel="noopener noreferrer">Concordia University</a>. Throughout my career, I have collaborated with multinational corporations, leveraging cloud platforms, CI/CD, and Agile methodologies to deliver high-quality, production-grade solutions.
       </p>
     );
     const two = (
@@ -32,11 +32,12 @@ class About extends React.Component {
     );
 
     const tech_stack = [
-      "Java,J2EE",
+      "Java, J2EE",
       "Spring Boot",
-      "AWS",
+      "AWS, Azure",
       "Apache Kafka",
-      "Python",
+      "Kubernetes",
+      "CI/CD & DevOps",
       "SQL, NO-SQL DBs"
     ];
 

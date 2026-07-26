@@ -60,47 +60,35 @@ class Projects extends React.Component {
       }
     };
     const projects = {
-      "TDSB Homework Management Interface": {
+      "Rewards-to-Loyalty Points Conversion": {
         desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/"
+          "Built capability enabling TD Bank customers to convert accumulated rewards into partner loyalty points (Starbucks, Uber), including a 'Pay with Rewards' feature to offset purchases directly.",
+        techStack: "Java 17, Spring Boot, REST APIs"
       },
-      "Adam A.I.": {
+      "Customer Self-Service Billing Portal": {
         desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-        techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/"
+          "Customer-facing self-service portal enabling payment and downloads of invoices, CDRs, and service summaries for a telecom SaaS product processing over 2 million monthly transactions.",
+        techStack: "Java, Spring Boot, AWS S3, ECS"
       },
-      "Distributed Logging and Monitoring System": {
+      "Recovery-Enabled Workflow Engine": {
         desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
-        techStack: "Node.js (Express.js), React.js, PostgreSQL",
-        link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
+          "Reusable Java library powering a recovery-enabled workflow engine for event-driven microservices, improving processing efficiency by 35% while handling 24 million monthly Kafka messages.",
+        techStack: "Java, Apache Kafka, Microservices"
       },
-      "Odin Bot": {
+      "Recovery & DLQ Management Console": {
         desc:
-          "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
-        open: ""
+          "Single-page application for recovery and dead-letter-queue (DLQ) management of failed transactions, reducing manual intervention by 90%.",
+        techStack: "React.js, Java, Spring Boot"
       },
-      "Game Centre": {
+      "Credit Card Rewards Engine": {
         desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
-        techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
-        open: ""
+          "Tiered backend rewards program calculating cashback based on customer spending and merchant partnerships, with a partner onboarding module for seamless integration of external businesses.",
+        techStack: "Java, Spring Boot, REST APIs"
       },
-      "Minimax Stonehenge": {
+      "Infrastructure Monitoring & Alerting": {
         desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
-        techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
-        open: ""
+          "Infrastructure monitoring with alerting and dashboards supporting production health checks and P1-P3 incident response via ServiceNow.",
+        techStack: "Splunk, Dynatrace, Datadog"
       }
     };
 
@@ -109,32 +97,6 @@ class Projects extends React.Component {
         <div className="section-header ">
           <span className="section-title">/ projects</span>
         </div>
-        <Carousel>
-          {Object.keys(spotlightProjects).map((key, i) => (
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={spotlightProjects[key]["image"]}
-                alt={key}
-              />
-              <div className="caption-bg">
-                <Carousel.Caption>
-                  <h3>{spotlightProjects[key]["title"]}</h3>
-                  <p>
-                    {spotlightProjects[key]["desc"]}
-                    <p className="techStack">
-                      {spotlightProjects[key]["techStack"]}
-                    </p>
-                  </p>
-                  <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
-                </Carousel.Caption>
-              </div>
-            </Carousel.Item>
-          ))}
-        </Carousel>
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
