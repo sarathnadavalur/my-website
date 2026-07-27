@@ -48,7 +48,7 @@ class Intro extends React.Component {
                           {" Ping me !"}
                         </a>
                         <a
-                          href="https://flowcv.com/resume/0onlhsa9cf" target="_blank"
+                          href="https://flowcv.com/resume/0onlhsa9cf" target="_blank" rel="noopener noreferrer"
                           className="intro-contact"
                         >
                           <LibraryBooks></LibraryBooks>
