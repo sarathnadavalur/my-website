@@ -1,6 +1,6 @@
 ## 🛠 set-up
 
-1. Install the dependencies
+1. Install the dependencies required
 
    ```sh
    npm install or yarn
