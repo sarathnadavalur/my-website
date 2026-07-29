@@ -1,0 +1,72 @@
+#solar-eclipse {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 680px;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(
+    ellipse 52% 58% at 50% 42%,
+    #000 40%,
+    transparent 78%
+  );
+  mask-image: radial-gradient(
+    ellipse 52% 58% at 50% 42%,
+    #000 40%,
+    transparent 78%
+  );
+}
+
+#solar-eclipse canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #solar-eclipse {
+    top: -30px;
+    height: 460px;
+    -webkit-mask-image: radial-gradient(
+      ellipse 75% 50% at 50% 38%,
+      #000 35%,
+      transparent 80%
+    );
+    mask-image: radial-gradient(
+      ellipse 75% 50% at 50% 38%,
+      #000 35%,
+      transparent 80%
+    );
+  }
+}
+
+/* Dims the page during eclipse totality while leaving the sun/moon/corona
+   itself untouched — the hole in the middle roughly tracks where the hero
+   animation sits when the page is scrolled to the top. Driven frame-by-frame
+   from SolarEclipse.js, so no CSS transition here (would fight the JS). */
+.eclipse-dim-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 34% 40% at 50% 30%,
+    transparent 0%,
+    transparent 35%,
+    #000 78%
+  );
+}
+
+@media only screen and (max-width: 600px) {
+  .eclipse-dim-overlay {
+    background: radial-gradient(
+      ellipse 55% 32% at 50% 26%,
+      transparent 0%,
+      transparent 30%,
+      #000 78%
+    );
+  }
+}

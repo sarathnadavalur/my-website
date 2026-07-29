@@ -1,15 +1,19 @@
 #intro {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: auto;
   max-width: 1000px;
-  padding-top: 200px;
+  padding-top: 420px;
   min-height: 100vh;
 }
 
 .Typist {
+  position: relative;
+  z-index: 1;
   color: var(--lightest-slate);
   text-align: center;
   font-size: 76px;
@@ -72,7 +76,7 @@ b {
   #intro {
     min-height: unset;
     padding-left: unset;
-    padding-top: unset;
+    padding-top: 300px;
     margin: 0;
     align-items: center;
   }

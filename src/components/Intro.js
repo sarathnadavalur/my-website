@@ -6,7 +6,9 @@ import "react-typist/dist/Typist.css";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import FadeInSection from "./FadeInSection";
-import FractalTree from "./FractalTree";
+import SolarEclipse from "./SolarEclipse";
+// FractalTree is the previous intro animation, kept as a backup — see git history / FractalTree.js
+// import FractalTree from "./FractalTree";
 
 class Intro extends React.Component {
   constructor() {
@@ -26,7 +28,7 @@ class Intro extends React.Component {
   render() {
     return (
       <div id="intro">
-        <FractalTree></FractalTree>
+        <SolarEclipse></SolarEclipse>
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"knock knock, "}
